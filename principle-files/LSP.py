@@ -1,5 +1,9 @@
 from abc import ABC, abstractmethod
 
+
+
+
+class LiskovSubstitutionPrincipleBase(ABC):
 """
 The Liskov substitution principle (LSP)
 """
@@ -19,9 +23,6 @@ Among all the SOLID principle, this is the most abstruse to understand and to ex
 For this principle, there is no standard “template-like” solution where it must be applied,
 and it is hard to offer a “standard example” to showcase.
 """
-
-
-class LiskovSubstitutionPrincipleBase(ABC):
     @abstractmethod
     def operation(self) -> bool:
         pass

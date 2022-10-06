@@ -1,5 +1,9 @@
 from abc import ABC, abstractmethod
 
+
+
+
+class Walker(ABC):
 """
 Many client-specific interfaces are better than one general-purpose interface
 
@@ -8,9 +12,6 @@ In the contest of classes, an interface is considered,
 all the methods and properties “exposed”,
 thus, everything that a user can interact with that belongs to that class.
 """
-
-
-class Walker(ABC):
     @abstractmethod
     def walk() -> bool:
         return print("can walk")
